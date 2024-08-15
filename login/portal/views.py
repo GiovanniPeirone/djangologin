@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
 from django.template import loader
 
 def xd(request):
@@ -6,7 +7,5 @@ def xd(request):
 
 
 def register(request):
-  direccion = "template/index.html"
-  template = loader.get_template(direccion)
-  return HttpResponse(template.render())
+  return render(request, 'portal/template/index.html')
 # Create your views here.
