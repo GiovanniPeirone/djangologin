@@ -7,5 +7,5 @@ def xd(request):
 
 
 def register(request):
-  return render(request, 'portal/template/index.html')
+  return render(request, 'index.html')
 # Create your views here.
