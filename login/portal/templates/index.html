@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
-    {% load Static %}
-    <link rel="stylesheet" href="{% Static styles/styles.css %}">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 </head>
 <body>
-    <div class="contenedorDePortal">
-        <h1>hello</h1>
-    </div>
+    <section class="contenedorDePortal">
+        <div class="Portal">
+            <div class="imagen">
+                <img src="" alt="imagen de perfil">
+            </div>
+            <div class="name">
+                <h1 class="Nombre">¡Hola! {Name}</h1>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
